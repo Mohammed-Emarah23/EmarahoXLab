@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ManageUserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\User\OrderController;
 use App\Http\Controllers\User\ProductController as UserProductController;
 use App\Http\Controllers\Vuln\VulnRceController;
 use App\Http\Controllers\Vuln\VulnSearchController;
@@ -58,19 +59,26 @@ Route::controller(UserProductController::class)->group(function(){
     Route::get('user/product/show/{id}','userShow')->name('show-userProduct');
     Route::get('cart','cartpage')->name('cartpage');
     Route::post('addTocart/{id}','addCart')->name('AddToCart');
+    Route::post('/remove-from-cart','remove')->name('cart.remove');
+    Route::post('/update-cart','updateCart')->name('updateCart');
 });
+// Make Orders 
+Route::controller(OrderController::class)->group(function(){
+        Route::get('cart','cartpage')->name('cartpage');
+        Route::get('/make-order', 'reviewOrder')->name('reviewOrder');
+        Route::post('/confirm-order','confirmOrder')->name('confirmOrder');
+        });
 
-// Vuln  RCE 
+//   R
 Route::controller(VulnRceController::class)->group(function(){
     Route::middleware(['auth', 'admin'])->group(function () {
-        // RCE 
-            Route::get('/admin/terminal', 'form')->name('Terminal');
+        // R
             });
             Route::post('/admin/terminal', 'execute')->name('execute');
  
 });
 
-//   // Sql Injection 
+//   // S
 Route::controller(VulnSearchController::class)->group(function(){
             Route::get('/vuln', 'search')->name('Vsearch');
             Route::get('/search','vulnerableSearch')->name('search');

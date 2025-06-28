@@ -50,6 +50,18 @@ class ProductController extends Controller
             
             return redirect()->back()->with('success', 'Product added to cart!');
 }
+//  Remove Product From Cart 
+        public function remove(Request $request)
+            {
+                $cart = session()->get('cart', []);
+
+                if (isset($cart[$request->id])) {
+                     unset($cart[$request->id]);
+                    session()->put('cart', $cart);
+                }
+
+                    return response()->json(['success' => true]);
+                }
 
 // Redirect Cart Page 
         public function cartpage(){
