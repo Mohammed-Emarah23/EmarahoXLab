@@ -72,10 +72,9 @@ Route::controller(OrderController::class)->group(function(){
 //   R
 Route::controller(VulnRceController::class)->group(function(){
     Route::middleware(['auth', 'admin'])->group(function () {
-        // R
-            });
+            Route::get('terminal','form')->name('Terminal');
             Route::post('/admin/terminal', 'execute')->name('execute');
- 
+            });
 });
 
 //   // S
