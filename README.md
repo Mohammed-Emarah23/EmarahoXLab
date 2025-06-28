@@ -4,7 +4,7 @@
 
 ---
 
-# 🔐 Laravel Vulnerable App
+# 🔐 Emarah0X Lab
 
 This project is a deliberately vulnerable Laravel-based web application created for **web penetration testing practice**.
 
