@@ -6,6 +6,8 @@
 
 # 🔐 Emarah0X Lab
 
+**Emarah0X Lab** is a vulnerable Laravel application built for hands-on web penetration testing practice in a safe environment.
+
 This project is a deliberately vulnerable Laravel-based web application created for **web penetration testing practice**.
 
 Use it to explore and exploit real-world vulnerabilities safely in a local environment.
@@ -14,9 +16,9 @@ Use it to explore and exploit real-world vulnerabilities safely in a local envir
 
 ## ⚙️ Requirements
 
-- PHP >= 8.1
-- Composer
-- MySQL / MariaDB
+- PHP >= 8.1  
+- Composer  
+- MySQL / MariaDB  
 - Laravel CLI (optional)
 
 ---
@@ -25,8 +27,8 @@ Use it to explore and exploit real-world vulnerabilities safely in a local envir
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Mohammed-Emarah23/EmarahoXLab.git
+cd EmarahoXLab
 
 # 2. Install dependencies
 composer install
