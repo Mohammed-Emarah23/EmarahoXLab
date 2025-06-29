@@ -6,11 +6,11 @@
 
 # 🔐 Emarah0X Lab
 
-**Emarah0X Lab** is a vulnerable Laravel application built for hands-on web penetration testing practice in a safe environment.
+**Emarah0X Lab** is a vulnerable application built for hands-on web penetration testing practice in a safe environment.
 
-This project is a deliberately vulnerable Laravel-based web application created for **web penetration testing practice**.
+This project is deliberately designed with multiple security flaws to help learners and professionals practice identifying and exploiting real-world vulnerabilities.
 
-Use it to explore and exploit real-world vulnerabilities safely in a local environment.
+Use it to explore and test common web security issues safely in a local setup.
 
 ---
 
