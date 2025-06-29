@@ -12,17 +12,6 @@ Use it to explore and exploit real-world vulnerabilities safely in a local envir
 
 ---
 
-## 🐞 Included Vulnerabilities
-
-- Broken Authentication
-- Insecure Direct Object References (IDOR)
-- SQL Injection
-- Cross-Site Scripting (XSS)
-- CSRF
-- and more...
-
----
-
 ## ⚙️ Requirements
 
 - PHP >= 8.1
